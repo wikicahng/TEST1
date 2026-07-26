@@ -189,8 +189,9 @@ button {
 }
 
 .page {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  inset: auto;
+  height: auto;
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
@@ -743,7 +744,7 @@ h1 {
     min-height: calc(100dvh - 108px);
     grid-template-columns: 1fr;
     grid-template-rows: minmax(300px, 52vh) auto;
-    overflow-y: auto;
+    overflow: visible;
     padding-bottom: 54px;
   }
   .carousel-slide .project-media {
