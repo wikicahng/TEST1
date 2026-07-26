@@ -1042,4 +1042,257 @@ body.lightbox-open {
    手機版作品頁完整捲動修正
 ======================================== */
 
+/* =========================================================
+   FINAL MOBILE LAYOUT OVERRIDE
+   必須置於整份 CSS 最後，避免被桌面輪播規則再次覆蓋
+========================================================= */
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
+  body {
+    overflow-y: auto;
+  }
+
+  .app-shell {
+    display: block;
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+  }
+
+  .top-panel {
+    position: relative;
+    width: 100%;
+    min-height: 108px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 12px 14px 0;
+  }
+
+  .brand {
+    min-height: 42px;
+  }
+
+  .brand-mark {
+    width: 25px;
+  }
+
+  .main-nav {
+    grid-template-columns: .7fr 1.2fr 1.55fr;
+    overflow-x: auto;
+  }
+
+  .nav-button {
+    min-height: 52px;
+    padding: 0 8px;
+    font-size: clamp(.61rem, 2.35vw, .78rem);
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  .button-index {
+    display: none;
+  }
+
+  .content-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .page {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .page[hidden] {
+    display: none !important;
+  }
+
+  .page.is-visible {
+    display: block;
+  }
+
+  .page-home {
+    min-height: calc(100dvh - 108px);
+  }
+
+  .carousel-page {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .project-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow-x: hidden;
+    overflow-y: visible;
+    touch-action: pan-y;
+  }
+
+  .carousel-track {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+  }
+
+  /* 手機版強制改為上下排列 */
+  .project-carousel .carousel-track > .carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: none;
+
+    overflow: visible;
+    padding-bottom: 90px;
+  }
+
+  /* 圖片／影片固定在作品上方 */
+  .project-carousel .carousel-slide > .project-media {
+    position: relative;
+    order: 1;
+    flex: 0 0 auto;
+
+    width: 100%;
+    height: clamp(280px, 60vw, 430px);
+    min-width: 0;
+    min-height: 280px;
+
+    overflow: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-carousel .carousel-slide > .project-media > img,
+  .project-carousel .carousel-slide > .project-media > video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* 說明固定在素材下方並自然延伸 */
+  .project-carousel .carousel-slide > .project-info {
+    position: relative;
+    order: 2;
+    flex: 0 0 auto;
+
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+
+    padding: 36px 23px 110px;
+    overflow: visible;
+    justify-content: flex-start;
+  }
+
+  .carousel-button {
+    top: clamp(140px, 30vw, 215px);
+    width: 40px;
+    height: 58px;
+    font-size: 1.65rem;
+  }
+
+  .carousel-prev {
+    left: 7px;
+  }
+
+  .carousel-next {
+    right: 7px;
+  }
+
+  .carousel-footer {
+    position: fixed;
+    left: 50%;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: 30;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 560px) {
+  .top-panel {
+    padding-inline: 10px;
+  }
+
+  .brand-copy strong {
+    font-size: .78rem;
+  }
+
+  .brand-copy small {
+    font-size: .52rem;
+  }
+
+  .main-nav {
+    margin-inline: -10px;
+  }
+
+  .nav-button {
+    padding-inline: 6px;
+    font-size: .63rem;
+  }
+
+  .page-home {
+    padding: 34px 22px 70px;
+    align-items: flex-end;
+  }
+
+  h1 {
+    font-size: clamp(3.5rem, 22vw, 6.2rem);
+  }
+
+  .intro {
+    font-size: .88rem;
+    line-height: 1.72;
+  }
+
+  .project-carousel .carousel-slide > .project-media {
+    height: max(280px, 62vw);
+  }
+
+  .project-carousel .carousel-slide > .project-info {
+    padding: 34px 23px 110px;
+  }
+
+  .project-info h2 {
+    font-size: 2.25rem;
+  }
+
+  .project-specs div {
+    grid-template-columns: 82px 1fr;
+  }
+}
