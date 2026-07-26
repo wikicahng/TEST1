@@ -37,38 +37,38 @@
           "src": "assets/vroid-bg_2.png",
           "alt": "未來空中都市"
         },
-        "description": "位於高空都市外圍的次世代研究基地，主要研究飛行、氣象、導航和人體動能技術。",
+        "description": "位於高空都市外圍的次世代研究室，主要研究飛行、氣象、導航和人體動能技術。",
         "specs": [
           {
             "label": "STYLE",
-            "value": "未來・科技"
+            "value": "未來・科技・研究"
           },
           {
             "label": "MOOD",
-            "value": "清爽・生活"
+            "value": "乾淨・知性"
           }
         ]
       },
       {
         "id": "future-stream-studio",
-        "title": "近未來直播棚",
-        "englishTitle": "FUTURE STREAM STUDIO",
-        "category": "STREAMING ENVIRONMENT",
+        "title": "未來學院",
+        "englishTitle": "FUTURE ACADEMY",
+        "category": "FUTURE LIFE",
         "tag": "BACKGROUND / 03",
         "media": {
           "type": "image",
-          "src": "assets/future-stream-studio.svg",
-          "alt": "近未來直播棚"
+          "src": "assets/vroid-bg_3.png",
+          "alt": "未來學院"
         },
-        "description": "以幾何框架、低反射材質和冷色發光線條構成，適合作為雜談、公告與科技內容的通用背景。",
+        "description": "未來城市的校園休息室，對比研究室更輕鬆、清爽、有活力。",
         "specs": [
           {
             "label": "STYLE",
-            "value": "近未來・科技極簡"
+            "value": "未來・生活化"
           },
           {
             "label": "MOOD",
-            "value": "清晰・理性・專業"
+            "value": "輕鬆・活力・年輕"
           }
         ]
       }
