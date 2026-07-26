@@ -183,15 +183,18 @@ button {
 }
 
 .content-panel {
-  min-height: 0;
   position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
   overflow: hidden;
 }
 
 .page {
-  position: relative;
-  inset: auto;
-  height: auto;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
@@ -202,6 +205,10 @@ button {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.page[hidden] {
+  display: none !important;
 }
 
 .page-home {
@@ -478,74 +485,6 @@ h1 {
   line-height: 1.55;
 }
 
-@media (max-width: 900px) {
-  body {
-    overflow: auto;
-  }
-
-  .app-shell {
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr;
-  }
-
-  .top-panel {
-    min-height: 108px;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 12px 14px 0;
-  }
-
-  .brand {
-    min-height: 42px;
-  }
-
-  .brand-mark {
-    width: 25px;
-  }
-
-  .main-nav {
-    grid-template-columns: .7fr 1.2fr 1.55fr;
-    overflow-x: auto;
-  }
-
-  .nav-button {
-    min-height: 52px;
-    padding: 0 8px;
-    font-size: clamp(.61rem, 2.35vw, .78rem);
-    white-space: normal;
-    line-height: 1.25;
-  }
-
-  .button-index {
-    display: none;
-  }
-
-  .content-panel {
-    min-height: calc(100dvh - 108px);
-    overflow: visible;
-  }
-
-  .page {
-    min-height: calc(100dvh - 108px);
-  }
-
-  .page-project {
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(320px, 56vh) auto;
-    overflow-y: auto;
-  }
-
-  .project-media {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .project-info {
-    justify-content: flex-start;
-    overflow: visible;
-    min-height: 44vh;
-  }
-}
 
 @media (max-width: 560px) {
   .top-panel {
@@ -611,6 +550,164 @@ h1 {
 
   .character-media img {
     padding: 0;
+  }
+}
+
+
+/* ========================================
+   手機／平板版：單一整理版
+======================================== */
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body { overflow-y: auto; }
+
+  .app-shell {
+    min-height: 100dvh;
+    height: auto;
+    display: block;
+  }
+
+  .top-panel {
+    position: relative;
+    width: 100%;
+    min-height: 108px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 12px 14px 0;
+  }
+
+  .brand { min-height: 42px; }
+  .brand-mark { width: 25px; }
+
+  .main-nav {
+    grid-template-columns: .7fr 1.2fr 1.55fr;
+    overflow-x: auto;
+  }
+
+  .nav-button {
+    min-height: 52px;
+    padding: 0 8px;
+    font-size: clamp(.61rem, 2.35vw, .78rem);
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  .button-index { display: none; }
+
+  .content-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .page {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .page[hidden] { display: none !important; }
+  .page.is-visible { display: block; }
+  .page-home { min-height: calc(100dvh - 108px); }
+
+  .carousel-page {
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .project-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow-x: clip;
+    overflow-y: visible;
+    touch-action: pan-y;
+  }
+
+  .carousel-track {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+  }
+
+  .carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    padding-bottom: 90px;
+  }
+
+  .carousel-slide .project-media {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: min(56vw, 420px);
+    min-height: 280px;
+    overflow: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .carousel-slide .project-media > img,
+  .carousel-slide .project-media > video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .carousel-slide .project-info {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 36px 23px 110px;
+    overflow: visible;
+    justify-content: flex-start;
+  }
+
+  .carousel-button {
+    top: min(28vw, 210px);
+    width: 40px;
+    height: 58px;
+    font-size: 1.65rem;
+  }
+
+  .carousel-prev { left: 7px; }
+  .carousel-next { right: 7px; }
+
+  .carousel-footer {
+    position: fixed;
+    left: 50%;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: 30;
+    transform: translateX(-50%);
   }
 }
 
@@ -734,39 +831,6 @@ h1 {
   background-color: #090d17;
 }
 .project-info, .project-media { user-select: text; }
-
-@media (max-width: 900px) {
-  .carousel-page { overflow: visible; }
-  .project-carousel { min-height: calc(100dvh - 108px); }
-  .carousel-track { align-items: stretch; }
-  .carousel-slide {
-    height: auto;
-    min-height: calc(100dvh - 108px);
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(300px, 52vh) auto;
-    overflow: visible;
-    padding-bottom: 54px;
-  }
-  .carousel-slide .project-media {
-    min-height: 300px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .carousel-button {
-    top: 26vh;
-    width: 40px;
-    height: 58px;
-    font-size: 1.65rem;
-  }
-  .carousel-prev { left: 7px; }
-  .carousel-next { right: 7px; }
-  .carousel-footer {
-    position: fixed;
-    bottom: max(10px, env(safe-area-inset-bottom));
-  }
-}
-
-
 
 
 /* ========================================
@@ -974,157 +1038,8 @@ body.lightbox-open {
 }
 
 
-
-
 /* ========================================
    手機版作品頁完整捲動修正
 ======================================== */
 
-@media (max-width: 900px) {
 
-  html,
-  body {
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  body {
-    overflow-y: auto;
-  }
-
-  .app-shell {
-    min-height: 100dvh;
-    height: auto;
-    display: block;
-  }
-
-  /* 手機版導覽列可保留在頂端 */
-  .top-panel {
-    position: relative;
-    width: 100%;
-    min-height: 108px;
-  }
-
-  .content-panel {
-    position: relative;
-    width: 100%;
-    min-height: calc(100dvh - 108px);
-    height: auto;
-    overflow: visible;
-  }
-
-  /* 手機版不要再使用絕對定位鎖死頁面 */
-  .page {
-    position: relative;
-    inset: auto;
-
-    width: 100%;
-    min-height: calc(100dvh - 108px);
-    height: auto;
-
-    overflow: visible;
-  }
-
-  .page[hidden] {
-    display: none !important;
-  }
-
-  .page.is-visible {
-    display: block;
-  }
-
-  .carousel-page {
-    width: 100%;
-    height: auto;
-    min-height: calc(100dvh - 108px);
-    overflow: visible;
-  }
-
-  .project-carousel {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: calc(100dvh - 108px);
-
-    overflow: hidden;
-    touch-action: pan-y;
-  }
-
-  .carousel-track {
-    display: flex;
-    align-items: flex-start;
-
-    width: 100%;
-    height: auto;
-    min-height: calc(100dvh - 108px);
-  }
-
-  .carousel-slide {
-    flex: 0 0 100%;
-    width: 100%;
-    min-width: 100%;
-
-    height: auto;
-    min-height: calc(100dvh - 108px);
-
-    display: flex;
-    flex-direction: column;
-
-    overflow: visible;
-    padding-bottom: 80px;
-  }
-
-  /* 圖片／影片區 */
-  .carousel-slide .project-media {
-    position: relative;
-
-    flex: 0 0 auto;
-    width: 100%;
-    height: min(56vw, 420px);
-    min-height: 280px;
-
-    overflow: hidden;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .carousel-slide .project-media > img,
-  .carousel-slide .project-media > video {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-    object-position: center;
-  }
-
-  /* 說明文字自然延伸，不要自己產生內層捲軸 */
-  .carousel-slide .project-info {
-    position: relative;
-
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-
-    padding: 36px 23px 90px;
-
-    overflow: visible;
-    justify-content: flex-start;
-  }
-
-  /* 頁碼固定在手機畫面底部 */
-  .carousel-footer {
-    position: fixed;
-    left: 50%;
-    bottom: max(12px, env(safe-area-inset-bottom));
-    z-index: 30;
-
-    transform: translateX(-50%);
-  }
-}
