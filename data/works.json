@@ -28,24 +28,24 @@
       },
       {
         "id": "moonlit-plum-pavilion",
-        "title": "月華梅亭",
-        "englishTitle": "MOONLIT PLUM PAVILION",
-        "category": "ORIENTAL ENVIRONMENT",
+        "title": "未來空中都市",
+        "englishTitle": "FUTURE SKY CITY",
+        "category": "FUTURE TECH",
         "tag": "BACKGROUND / 02",
         "media": {
           "type": "image",
-          "src": "assets/moonlit-plum-pavilion.svg",
-          "alt": "月華梅亭"
+          "src": "assets/vroid-bg_2.png",
+          "alt": "未來空中都市"
         },
-        "description": "延伸同一幻想世界中的東方王朝支線，以月色、梅花與深色建築結構降低角色服裝與場景撞色。",
+        "description": "位於高空都市外圍的次世代研究基地，主要研究飛行、氣象、導航和人體動能技術。",
         "specs": [
           {
             "label": "STYLE",
-            "value": "東方幻想・亭閣"
+            "value": "未來・科技"
           },
           {
-            "label": "MOOD",
-            "value": "寧靜・神秘・典雅"
+            "label": "SKY",
+            "value": "清爽・生活"
           }
         ]
       },
