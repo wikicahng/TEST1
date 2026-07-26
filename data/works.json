@@ -1,0 +1,156 @@
+{
+  "background": {
+    "label": "VROID背景設計",
+    "ariaLabel": "VROID背景設計作品",
+    "works": [
+      {
+        "id": "grand-arcane-library",
+        "title": "皇家大魔法圖書館",
+        "englishTitle": "GRAND ARCANE LIBRARY",
+        "category": "FEATURED ENVIRONMENT",
+        "tag": "BACKGROUND / 01",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-bg_1.png",
+          "alt": "皇家大魔法圖書館"
+        },
+        "description": "融合挑高穹頂、彩繪玻璃、金色裝飾與漂浮魔法元素，營造知性、溫暖且具有世界觀層次的主播空間。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "奇幻・魔法學院"
+          },
+          {
+            "label": "MOOD",
+            "value": "知性・溫暖・優雅"
+          }
+        ]
+      },
+      {
+        "id": "moonlit-plum-pavilion",
+        "title": "月華梅亭",
+        "englishTitle": "MOONLIT PLUM PAVILION",
+        "category": "ORIENTAL ENVIRONMENT",
+        "tag": "BACKGROUND / 02",
+        "media": {
+          "type": "image",
+          "src": "assets/moonlit-plum-pavilion.svg",
+          "alt": "月華梅亭"
+        },
+        "description": "延伸同一幻想世界中的東方王朝支線，以月色、梅花與深色建築結構降低角色服裝與場景撞色。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "東方幻想・亭閣"
+          },
+          {
+            "label": "MOOD",
+            "value": "寧靜・神秘・典雅"
+          }
+        ]
+      },
+      {
+        "id": "future-stream-studio",
+        "title": "近未來直播棚",
+        "englishTitle": "FUTURE STREAM STUDIO",
+        "category": "STREAMING ENVIRONMENT",
+        "tag": "BACKGROUND / 03",
+        "media": {
+          "type": "image",
+          "src": "assets/future-stream-studio.svg",
+          "alt": "近未來直播棚"
+        },
+        "description": "以幾何框架、低反射材質和冷色發光線條構成，適合作為雜談、公告與科技內容的通用背景。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "近未來・科技極簡"
+          },
+          {
+            "label": "MOOD",
+            "value": "清晰・理性・專業"
+          }
+        ]
+      }
+    ]
+  },
+  "character": {
+    "label": "VROID角色與衣服設計",
+    "ariaLabel": "VROID角色與衣服設計作品",
+    "works": [
+      {
+        "id": "asymmetry-tech-uniform",
+        "title": "非對稱科技制服",
+        "englishTitle": "ASYMMETRY TECH UNIFORM",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 01",
+        "media": {
+          "type": "video",
+          "src": "assets/vroid-character_1.mp4",
+          "poster": "assets/character-soft-tech.svg",
+          "alt": "非對稱科技制服展示影片",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        },
+        "description": "以中天寶寶角色形象為基礎進行開發，白色為主，搭配低彩度藍灰色細節與深紅色點綴，讓服裝保有科技感，同時維持柔和親近的視覺印象。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "簡潔・柔和"
+          },
+          {
+            "label": "COLOR",
+            "value": "白・霧藍・深紅"
+          }
+        ]
+      },
+      {
+        "id": "character-development-02",
+        "title": "開發中",
+        "englishTitle": "UNDER DEVELOPMENT",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 02",
+        "media": {
+          "type": "image",
+          "src": "assets/character-asymmetry.svg",
+          "alt": "角色服裝開發中"
+        },
+        "description": "此作品仍在設計與測試階段，完成後可直接在 works.json 中替換圖片、名稱與介紹。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "不對稱・俐落"
+          },
+          {
+            "label": "DETAIL",
+            "value": "偏移扣件・側邊線條"
+          }
+        ]
+      },
+      {
+        "id": "character-development-03",
+        "title": "開發中",
+        "englishTitle": "UNDER DEVELOPMENT",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 03",
+        "media": {
+          "type": "image",
+          "src": "assets/character-night.svg",
+          "alt": "角色服裝開發中"
+        },
+        "description": "此作品仍在設計與測試階段，完成後可直接在 works.json 中替換圖片、影片與說明。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "近未來・夜間版"
+          },
+          {
+            "label": "COLOR",
+            "value": "深藍・霧紫・銀灰"
+          }
+        ]
+      }
+    ]
+  }
+}
