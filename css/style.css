@@ -973,3 +973,158 @@ body.lightbox-open {
   }
 }
 
+
+
+
+/* ========================================
+   手機版作品頁完整捲動修正
+======================================== */
+
+@media (max-width: 900px) {
+
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  .app-shell {
+    min-height: 100dvh;
+    height: auto;
+    display: block;
+  }
+
+  /* 手機版導覽列可保留在頂端 */
+  .top-panel {
+    position: relative;
+    width: 100%;
+    min-height: 108px;
+  }
+
+  .content-panel {
+    position: relative;
+    width: 100%;
+    min-height: calc(100dvh - 108px);
+    height: auto;
+    overflow: visible;
+  }
+
+  /* 手機版不要再使用絕對定位鎖死頁面 */
+  .page {
+    position: relative;
+    inset: auto;
+
+    width: 100%;
+    min-height: calc(100dvh - 108px);
+    height: auto;
+
+    overflow: visible;
+  }
+
+  .page[hidden] {
+    display: none !important;
+  }
+
+  .page.is-visible {
+    display: block;
+  }
+
+  .carousel-page {
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+    overflow: visible;
+  }
+
+  .project-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+
+  .carousel-track {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto;
+    min-height: calc(100dvh - 108px);
+  }
+
+  .carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+
+    height: auto;
+    min-height: calc(100dvh - 108px);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: visible;
+    padding-bottom: 80px;
+  }
+
+  /* 圖片／影片區 */
+  .carousel-slide .project-media {
+    position: relative;
+
+    flex: 0 0 auto;
+    width: 100%;
+    height: min(56vw, 420px);
+    min-height: 280px;
+
+    overflow: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .carousel-slide .project-media > img,
+  .carousel-slide .project-media > video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* 說明文字自然延伸，不要自己產生內層捲軸 */
+  .carousel-slide .project-info {
+    position: relative;
+
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 36px 23px 90px;
+
+    overflow: visible;
+    justify-content: flex-start;
+  }
+
+  /* 頁碼固定在手機畫面底部 */
+  .carousel-footer {
+    position: fixed;
+    left: 50%;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: 30;
+
+    transform: translateX(-50%);
+  }
+}
