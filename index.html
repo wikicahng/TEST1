@@ -4,124 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070a12">
-  <meta name="description" content="VROID 背景、角色與服裝設計作品展示網站">
   <title>VROID DESIGN ARCHIVE</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <header class="top-panel">
-      <a class="brand" href="#home" aria-label="回到首頁">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-copy">
-          <strong>VROID DESIGN</strong>
-          <small>VISUAL ARCHIVE / 001</small>
-        </span>
-      </a>
+<div class="app-shell">
+  <header class="top-panel">
+    <a class="brand" href="#home" aria-label="回首頁">
+      <span class="brand-mark"></span>
+      <span class="brand-copy"><strong>VROID DESIGN</strong><small>VISUAL ARCHIVE / 001</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主要導覽">
+      <button class="nav-button is-active" data-page="home"><span class="button-index">01</span><span>回首頁</span></button>
+      <button class="nav-button" data-page="background"><span class="button-index">02</span><span>VROID背景設計</span></button>
+      <button class="nav-button" data-page="character"><span class="button-index">03</span><span>VROID角色&amp;衣服設計</span></button>
+    </nav>
+  </header>
 
-      <nav class="main-nav" aria-label="主要導覽">
-        <button class="nav-button is-active" type="button" data-page="home">
-          <span class="button-index">01</span>
-          <span>回首頁</span>
-        </button>
-        <button class="nav-button" type="button" data-page="background">
-          <span class="button-index">02</span>
-          <span>VROID背景設計</span>
-        </button>
-        <button class="nav-button" type="button" data-page="character">
-          <span class="button-index">03</span>
-          <span>VROID角色&amp;衣服設計</span>
-        </button>
-      </nav>
-    </header>
+  <main class="content-panel">
+    <section class="page page-home is-visible" id="home" data-page-panel="home">
+      <img class="full-bg" src="assets/solar-system.png" alt="">
+      <div class="visual-overlay"></div><div class="home-grid"></div>
+      <div class="home-content">
+        <p class="eyebrow">VIRTUAL CREATION PORTFOLIO</p>
+        <h1>WELCOME</h1>
+        <p class="intro">探索 VROID 虛擬角色、服裝與主播背景的設計紀錄。</p>
+        <button class="primary-action" data-jump="background"><span>ENTER ARCHIVE</span><span>↗</span></button>
+      </div>
+    </section>
 
-    <main class="content-panel">
-      <section class="page page-home is-visible" id="home" data-page-panel="home" aria-labelledby="home-title">
-        <img class="full-bg" src="assets/solar-system.svg" alt="">
-        <div class="visual-overlay"></div>
-        <div class="home-grid" aria-hidden="true"></div>
-        <div class="home-content">
-          <p class="eyebrow">VIRTUAL CREATION PORTFOLIO</p>
-          <h1 id="home-title">WELCOME</h1>
-          <p class="intro">
-            探索 VROID 虛擬角色、服裝與主播背景的設計紀錄。        
-          </p>
-          <button class="primary-action" type="button" data-jump="background">
-            <span>ENTER ARCHIVE</span>
-            <span aria-hidden="true">↗</span>
-          </button>
+    <section class="page carousel-page" id="background" data-page-panel="background" hidden>
+      <div class="project-carousel" data-carousel aria-label="VROID背景設計作品">
+        <div class="carousel-track">
+          <article class="carousel-slide">
+            <div class="project-media"><img src="assets/vroid-bg_1.png" alt="皇家大魔法圖書館"><div class="image-tag">BACKGROUND / 01</div></div>
+            <div class="project-info"><p class="eyebrow">FEATURED ENVIRONMENT</p><h2>皇家大魔法圖書館</h2><p class="project-en">GRAND ARCANE LIBRARY</p><div class="divider"></div><p>融合挑高穹頂、彩繪玻璃、金色裝飾與漂浮魔法元素，營造知性、溫暖且具有世界觀層次的主播空間。</p><dl class="project-specs"><div><dt>STYLE</dt><dd>奇幻・魔法學院</dd></div><div><dt>MOOD</dt><dd>知性・溫暖・優雅</dd></div></dl></div>
+          </article>
+          <article class="carousel-slide">
+            <div class="project-media"><img src="assets/moonlit-plum-pavilion.svg" alt="月華梅亭"><div class="image-tag">BACKGROUND / 02</div></div>
+            <div class="project-info"><p class="eyebrow">ORIENTAL ENVIRONMENT</p><h2>月華梅亭</h2><p class="project-en">MOONLIT PLUM PAVILION</p><div class="divider"></div><p>延伸同一幻想世界中的東方王朝支線，以月色、梅花與深色建築結構降低角色服裝與場景撞色。</p><dl class="project-specs"><div><dt>STYLE</dt><dd>東方幻想・亭閣</dd></div><div><dt>MOOD</dt><dd>寧靜・神秘・典雅</dd></div></dl></div>
+          </article>
+          <article class="carousel-slide">
+            <div class="project-media"><img src="assets/future-stream-studio.svg" alt="近未來直播棚"><div class="image-tag">BACKGROUND / 03</div></div>
+            <div class="project-info"><p class="eyebrow">STREAMING ENVIRONMENT</p><h2>近未來直播棚</h2><p class="project-en">FUTURE STREAM STUDIO</p><div class="divider"></div><p>以幾何框架、低反射材質和冷色發光線條構成，適合作為雜談、公告與科技內容的通用背景。</p><dl class="project-specs"><div><dt>STYLE</dt><dd>近未來・科技極簡</dd></div><div><dt>MOOD</dt><dd>清晰・理性・專業</dd></div></dl></div>
+          </article>
         </div>
-        <div class="status-rail" aria-hidden="true">
-          <span>SYSTEM ONLINE</span>
-          <span class="status-dot"></span>
-          <span>TAIPEI / TW</span>
-        </div>
-      </section>
+        <button class="carousel-button carousel-prev" aria-label="上一件作品">‹</button>
+        <button class="carousel-button carousel-next" aria-label="下一件作品">›</button>
+        <div class="carousel-footer"><span class="carousel-counter">01 / 03</span><div class="carousel-dots"></div></div>
+      </div>
+    </section>
 
-      <section class="page page-project" id="background" data-page-panel="background" aria-labelledby="background-title" hidden>
-        <div class="project-media">
-          <img src="assets/grand-arcane-library.png" alt="皇家大魔法圖書館概念展示圖">
-          <div class="image-tag">V-A / BACKGROUND DESIGN</div>
-        </div>
-        <article class="project-info">
-          <p class="eyebrow">FEATURED ENVIRONMENT</p>
-          <h2 id="background-title">皇家大魔法圖書館</h2>
-          <p class="project-en">GRAND ARCANE LIBRARY</p>
-          <div class="divider"></div>
-          <p>
-            以王立魔法學院的中央圖書館為核心，融合挑高穹頂、彩繪玻璃、
-            金色裝飾與漂浮魔法書，營造知性、溫暖且帶有奇幻層次的主播空間。
-          </p>
-          <p>
-            場景中央保留角色站位與鏡頭焦點，背景則透過迴廊、書架與自然光建立景深，
-            適合雜談、讀書、公告與世界觀企劃。
-          </p>
-          <dl class="project-specs">
-            <div><dt>STYLE</dt><dd>奇幻・魔法學院</dd></div>
-            <div><dt>LIGHT</dt><dd>自然光＋魔法光源</dd></div>
-            <div><dt>MOOD</dt><dd>知性・溫暖・優雅</dd></div>
-          </dl>
-        </article>
-      </section>
+    <section class="page carousel-page" id="character" data-page-panel="character" hidden>
+      <div class="project-carousel" data-carousel aria-label="VROID角色與衣服設計作品">
+        <div class="carousel-track">
+          <article class="carousel-slide">
 
-      <section class="page page-project page-character" id="character" data-page-panel="character" aria-labelledby="character-title" hidden>
-
-        <div class="project-media character-media">
+<div class="project-media character-media">
   <video
-    class="character-video"
+    class="project-video"
     autoplay
     muted
     loop
     playsinline
     preload="metadata"
   >
-    <source src="assets/vroid-character.mp4" type="video/mp4">
-
+    <source src="assets/vroid-character_1.mp4" type="video/mp4">
   </video>
 
-  <div class="image-tag">CHARACTER / COSTUME DESIGN</div>
+  <div class="image-tag">COSTUME / 01</div>
 </div>
 
-        <article class="project-info">
-          <p class="eyebrow">CHARACTER DEVELOPMENT</p>
-          <h2 id="character-title">現代科技風格設計</h2>
-          <p class="project-en">CHARACTER &amp; COSTUME STUDY</p>
-          <div class="divider"></div>
-          <p>
-            手繪修改造型，測試可以做到修改髮型臉部及衣服款式，以簡潔、不對稱與近未來感為主要方向，使用柔和低彩度配色與俐落分割線，讓服裝保有辨識度，同時不搶走角色表情與髮型焦點。
-          </p>
-        
-          <dl class="project-specs">
-            <div><dt>DESIGN</dt><dd>簡潔・不對稱</dd></div>
-            <div><dt>DIRECTION</dt><dd>近未來</dd></div>
-            <div><dt>COLOR</dt><dd>柔和低彩度</dd></div>
-          </dl>
-        </article>
-      </section>
-    </main>
-  </div>
 
-  <noscript>此網站需要啟用 JavaScript 才能切換分頁。</noscript>
-  <script src="js/main.js"></script>
+            <div class="project-info"><p class="eyebrow">CHARACTER DEVELOPMENT</p><h2>非對稱科技制服</h2><p class="project-en">ASYMMETRY  TECH UNIFORM</p><div class="divider"></div><p>以配搭中天寶寶來開發，白色為主，搭配低彩度藍灰色細節跟深紅色點綴，讓服裝保有科技感而不顯得過度強硬。</p><dl class="project-specs"><div><dt>DESIGN</dt><dd>簡潔・柔和</dd></div><div><dt>COLOR</dt><dd>白・霧藍・深紅</dd></div></dl></div>
+          </article>
+          <article class="carousel-slide">
+            <div class="project-media character-media"><img src="assets/character-asymmetry.svg" alt="開發中"><div class="image-tag">COSTUME / 02</div></div>
+            <div class="project-info"><p class="eyebrow">CHARACTER DEVELOPMENT</p><h2>開發中</h2><p class="project-en">Under development</p><div class="divider"></div><p>還在想。</p><dl class="project-specs"><div><dt>DESIGN</dt><dd>不對稱・俐落</dd></div><div><dt>DETAIL</dt><dd>偏移扣件・側邊線條</dd></div></dl></div>
+          </article>
+          <article class="carousel-slide">
+            <div class="project-media character-media"><img src="assets/character-night.svg" alt="開發中"><div class="image-tag">COSTUME / 03</div></div>
+            <div class="project-info"><p class="eyebrow">CHARACTER DEVELOPMENT</p><h2>開發中</h2><p class="project-en">Under developmen</p><div class="divider"></div><p>還在想。</p><dl class="project-specs"><div><dt>DESIGN</dt><dd>近未來・夜間版</dd></div><div><dt>COLOR</dt><dd>深藍・霧紫・銀灰</dd></div></dl></div>
+          </article>
+        </div>
+        <button class="carousel-button carousel-prev" aria-label="上一件作品">‹</button>
+        <button class="carousel-button carousel-next" aria-label="下一件作品">›</button>
+        <div class="carousel-footer"><span class="carousel-counter">01 / 03</span><div class="carousel-dots"></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

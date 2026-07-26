@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7fd7ff"/><stop offset="1" stop-color="#e9fbff"/></linearGradient>
+  <linearGradient id="hall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff3d2"/><stop offset="1" stop-color="#b58a52"/></linearGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dce9ee"/><stop offset="1" stop-color="#4d5969"/></linearGradient>
+  <radialGradient id="light"><stop stop-color="#fffbd6" stop-opacity=".95"/><stop offset="1" stop-color="#fffbd6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1400" height="1000" fill="#10182b"/>
+<rect x="70" y="40" width="1260" height="910" rx="34" fill="url(#hall)"/>
+<path d="M330 540V250 Q330 105 700 70 Q1070 105 1070 250V540Z" fill="#f5e7bd"/>
+<path d="M450 535V265 Q450 160 700 128 Q950 160 950 265V535Z" fill="url(#sky)" stroke="#c9953f" stroke-width="16"/>
+<circle cx="700" cy="277" r="96" fill="none" stroke="#d5a844" stroke-width="12"/>
+<path d="M700 181V373M604 277H796M632 209L768 345M768 209L632 345" stroke="#d5a844" stroke-width="8" opacity=".85"/>
+<g fill="#15243d">
+  <rect x="105" y="230" width="240" height="460" rx="12"/><rect x="1055" y="230" width="240" height="460" rx="12"/>
+</g>
+<g stroke="#c39242" stroke-width="9">
+  <path d="M125 300H325M125 380H325M125 460H325M125 540H325M125 620H325"/>
+  <path d="M1075 300H1275M1075 380H1275M1075 460H1275M1075 540H1275M1075 620H1275"/>
+</g>
+<g fill="#7f4b34">
+  <rect x="145" y="258" width="24" height="38"/><rect x="183" y="252" width="28" height="44"/><rect x="224" y="262" width="20" height="34"/><rect x="258" y="250" width="31" height="46"/>
+  <rect x="1094" y="252" width="26" height="44"/><rect x="1134" y="260" width="22" height="36"/><rect x="1170" y="248" width="30" height="48"/><rect x="1213" y="258" width="23" height="38"/>
+</g>
+<path d="M110 690 Q280 620 382 470" fill="none" stroke="#d4a751" stroke-width="24"/>
+<path d="M1290 690 Q1120 620 1018 470" fill="none" stroke="#d4a751" stroke-width="24"/>
+<path d="M70 710H1330V950H70Z" fill="url(#floor)"/>
+<ellipse cx="700" cy="825" rx="320" ry="104" fill="none" stroke="#d4aa54" stroke-width="9"/>
+<ellipse cx="700" cy="825" rx="195" ry="64" fill="none" stroke="#91a9d3" stroke-width="6"/>
+<g transform="translate(700 92)">
+  <ellipse rx="108" ry="35" fill="none" stroke="#d7ad55" stroke-width="12"/>
+  <ellipse rx="42" ry="90" fill="none" stroke="#d7ad55" stroke-width="9"/>
+  <polygon points="0,30 24,76 0,112 -24,76" fill="#69d9ff"/>
+</g>
+<g fill="#7ce1ff" opacity=".8">
+  <polygon points="390,360 405,330 420,360 405,390"/><polygon points="1000,405 1014,376 1028,405 1014,434"/>
+  <polygon points="864,220 875,198 886,220 875,242"/>
+</g>
+<g fill="#f0d57e" opacity=".8">
+  <ellipse cx="355" cy="170" rx="210" ry="110" fill="url(#light)"/>
+  <ellipse cx="1045" cy="170" rx="210" ry="110" fill="url(#light)"/>
+</g>
+<rect x="80" y="780" width="320" height="120" rx="10" fill="#49331f"/>
+<rect x="1000" y="780" width="320" height="120" rx="10" fill="#49331f"/>
+<g fill="#c9a559"><rect x="120" y="748" width="150" height="24" rx="5"/><rect x="1080" y="740" width="135" height="26" rx="5"/></g>
+<text x="700" y="915" text-anchor="middle" fill="#f4e4ba" font-family="serif" font-size="38" letter-spacing="8">GRAND ARCANE LIBRARY</text>
+</svg>

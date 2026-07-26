@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#291b35"/></linearGradient>
+<radialGradient id="moon"><stop stop-color="#fffbdc"/><stop offset="1" stop-color="#c6d8ff"/></radialGradient>
+</defs>
+<rect width="1400" height="1000" fill="url(#bg)"/>
+<circle cx="1030" cy="230" r="130" fill="url(#moon)" opacity=".92"/>
+<g stroke="#6d7895" stroke-width="18" fill="none">
+<path d="M100 790H1300"/><path d="M180 790V310M1220 790V310"/>
+<path d="M180 360H1220"/><path d="M350 360V790M1050 360V790"/>
+</g>
+<g fill="#151923" stroke="#9d7fc0" stroke-width="8">
+<rect x="270" y="520" width="860" height="270" rx="12"/>
+<path d="M240 520L700 250L1160 520Z"/>
+</g>
+<g stroke="#d7b9e8" stroke-width="8" fill="none">
+<path d="M410 790V450M990 790V450"/><path d="M350 650H1050"/>
+</g>
+<g fill="#efb6cf">
+<circle cx="355" cy="420" r="12"/><circle cx="325" cy="390" r="9"/><circle cx="300" cy="450" r="10"/>
+<circle cx="1090" cy="450" r="12"/><circle cx="1125" cy="405" r="9"/><circle cx="1160" cy="470" r="10"/>
+</g>
+<path d="M0 850Q350 760 700 860T1400 830V1000H0Z" fill="#10131c"/>
+<text x="700" y="930" text-anchor="middle" fill="#e8daf0" font-family="sans-serif" font-size="42" letter-spacing="10">MOONLIT PLUM PAVILION</text>
+</svg>

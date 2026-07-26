@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="44%" r="55%"><stop stop-color="#202e5a"/><stop offset="1" stop-color="#080c16"/></radialGradient>
+  <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8efff"/><stop offset=".55" stop-color="#aab9dc"/><stop offset="1" stop-color="#6f7da4"/></linearGradient>
+  <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef1f5"/><stop offset=".55" stop-color="#c5ced9"/><stop offset="1" stop-color="#7f8da3"/></linearGradient>
+</defs>
+<rect width="1000" height="1000" fill="url(#bg)"/>
+<g opacity=".22" stroke="#75ddff">
+  <path d="M80 140H920M80 270H920M80 400H920M80 530H920M80 660H920M80 790H920"/>
+  <path d="M170 80V920M330 80V920M500 80V920M670 80V920M830 80V920"/>
+</g>
+<circle cx="500" cy="310" r="142" fill="#f1d6c8"/>
+<path d="M360 315Q350 125 510 120Q675 135 638 350Q604 245 555 215Q475 290 360 315Z" fill="url(#hair)"/>
+<path d="M355 250Q340 400 415 455L385 246Z" fill="url(#hair)"/>
+<path d="M640 248Q675 390 600 460L625 238Z" fill="url(#hair)"/>
+<ellipse cx="445" cy="318" rx="17" ry="24" fill="#33455f"/>
+<ellipse cx="555" cy="318" rx="17" ry="24" fill="#33455f"/>
+<path d="M467 378Q500 400 533 378" fill="none" stroke="#c9858a" stroke-width="9" stroke-linecap="round"/>
+<path d="M330 520Q500 430 670 520L770 920H230Z" fill="url(#cloth)"/>
+<path d="M500 474L430 585L500 668L574 585Z" fill="#26344d"/>
+<path d="M430 505L500 668L360 565Z" fill="#fafcff" opacity=".9"/>
+<path d="M574 505L500 668L660 555Z" fill="#dce5ef"/>
+<path d="M325 560L230 920H360L415 590Z" fill="#a6b6cb"/>
+<path d="M665 550L770 920H640L585 585Z" fill="#74869f"/>
+<path d="M360 710H640" stroke="#75ddff" stroke-width="8" opacity=".8"/>
+<circle cx="610" cy="690" r="10" fill="#b79cff"/>
+<path d="M284 913H716" stroke="#75ddff" stroke-width="4" opacity=".55"/>
+<text x="500" y="965" text-anchor="middle" fill="#bcd3e8" font-family="sans-serif" font-size="25" letter-spacing="7">CHARACTER PLACEHOLDER</text>
+</svg>
