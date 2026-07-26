@@ -1,25 +1,132 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<title>我的第一個網站</title>
-<style>
-body{
-    font-family:Arial;
-    text-align:center;
-    margin-top:100px;
-    background:#f5f5f5;
-}
-h1{
-    color:#2b6cb0;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070a12">
+  <meta name="description" content="VROID 背景、角色與服裝設計作品展示網站">
+  <title>VROID DESIGN ARCHIVE</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="app-shell">
+    <header class="top-panel">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>VROID DESIGN</strong>
+          <small>VISUAL ARCHIVE / 001</small>
+        </span>
+      </a>
 
-<h1>Hello GitHub Pages!</h1>
-<p>這是我的第一個網站。</p>
+      <nav class="main-nav" aria-label="主要導覽">
+        <button class="nav-button is-active" type="button" data-page="home">
+          <span class="button-index">01</span>
+          <span>回首頁</span>
+        </button>
+        <button class="nav-button" type="button" data-page="background">
+          <span class="button-index">02</span>
+          <span>VROID背景設計</span>
+        </button>
+        <button class="nav-button" type="button" data-page="character">
+          <span class="button-index">03</span>
+          <span>VROID角色&amp;衣服設計</span>
+        </button>
+      </nav>
+    </header>
 
+    <main class="content-panel">
+      <section class="page page-home is-visible" id="home" data-page-panel="home" aria-labelledby="home-title">
+        <img class="full-bg" src="assets/solar-system.svg" alt="">
+        <div class="visual-overlay"></div>
+        <div class="home-grid" aria-hidden="true"></div>
+        <div class="home-content">
+          <p class="eyebrow">VIRTUAL CREATION PORTFOLIO</p>
+          <h1 id="home-title">WELCOME</h1>
+          <p class="intro">
+            探索 VROID 虛擬角色、服裝與主播背景的設計紀錄。
+            以簡潔視覺、近未來語彙與柔和色彩，建立可持續延伸的創作世界。
+          </p>
+          <button class="primary-action" type="button" data-jump="background">
+            <span>ENTER ARCHIVE</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="status-rail" aria-hidden="true">
+          <span>SYSTEM ONLINE</span>
+          <span class="status-dot"></span>
+          <span>TAIPEI / TW</span>
+        </div>
+      </section>
+
+      <section class="page page-project" id="background" data-page-panel="background" aria-labelledby="background-title" hidden>
+        <div class="project-media">
+          <img src="assets/grand-arcane-library.png" alt="皇家大魔法圖書館概念展示圖">
+          <div class="image-tag">V-A / BACKGROUND DESIGN</div>
+        </div>
+        <article class="project-info">
+          <p class="eyebrow">FEATURED ENVIRONMENT</p>
+          <h2 id="background-title">皇家大魔法圖書館</h2>
+          <p class="project-en">GRAND ARCANE LIBRARY</p>
+          <div class="divider"></div>
+          <p>
+            以王立魔法學院的中央圖書館為核心，融合挑高穹頂、彩繪玻璃、
+            金色裝飾與漂浮魔法書，營造知性、溫暖且帶有奇幻層次的主播空間。
+          </p>
+          <p>
+            場景中央保留角色站位與鏡頭焦點，背景則透過迴廊、書架與自然光建立景深，
+            適合雜談、讀書、公告與世界觀企劃。
+          </p>
+          <dl class="project-specs">
+            <div><dt>STYLE</dt><dd>奇幻・魔法學院</dd></div>
+            <div><dt>LIGHT</dt><dd>自然光＋魔法光源</dd></div>
+            <div><dt>MOOD</dt><dd>知性・溫暖・優雅</dd></div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="page page-project page-character" id="character" data-page-panel="character" aria-labelledby="character-title" hidden>
+
+        <div class="project-media character-media">
+  <video
+    class="character-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  >
+    <source src="assets/vroid-character.mp4" type="video/mp4">
+
+  </video>
+
+  <div class="image-tag">CHARACTER / COSTUME DESIGN</div>
+</div>
+
+        <article class="project-info">
+          <p class="eyebrow">CHARACTER DEVELOPMENT</p>
+          <h2 id="character-title">VROID角色＆衣服設計</h2>
+          <p class="project-en">CHARACTER &amp; COSTUME STUDY</p>
+          <div class="divider"></div>
+          <p>
+            角色造型以簡潔、不對稱與近未來感為主要方向，
+            使用柔和低彩度配色與俐落分割線，讓服裝保有辨識度，同時不搶走角色表情與髮型焦點。
+          </p>
+          <p>
+            此區將持續收錄角色外觀、上衣貼圖、UV 配置及後續服裝款式，
+            形成可比較、可延伸的設計資料庫。
+          </p>
+          <dl class="project-specs">
+            <div><dt>DESIGN</dt><dd>簡潔・不對稱</dd></div>
+            <div><dt>DIRECTION</dt><dd>近未來</dd></div>
+            <div><dt>COLOR</dt><dd>柔和低彩度</dd></div>
+          </dl>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <noscript>此網站需要啟用 JavaScript 才能切換分頁。</noscript>
+  <script src="js/main.js"></script>
 </body>
 </html>
