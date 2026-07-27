@@ -140,7 +140,7 @@
           "loop": true,
           "muted": true
         },
-        "description": "以中天寶寶配色為基礎進行繪製，白色為主，搭配低彩度藍灰色細節與深紅色點綴，讓服裝保有科技感，同時維持柔和親近的視覺印象。",
+        "description": "以中天寶寶配色為基礎進行繪製，白色為主，搭配低彩度藍灰色細節與深紅色點綴，讓服裝保有科技感，同時維持柔和親近的視覺印象，角色特色為正義、充滿活力。",
         "specs": [
           {
             "label": "DESIGN",
@@ -154,24 +154,24 @@
       },
       {
         "id": "character-development-02",
-        "title": "開發中",
+        "title": "未來學院制服  設計稿",
         "englishTitle": "UNDER DEVELOPMENT",
         "category": "CHARACTER DEVELOPMENT",
         "tag": "COSTUME / 02",
         "media": {
           "type": "image",
-          "src": "assets/character-asymmetry.svg",
-          "alt": "角色服裝開發中"
+          "src": "assets/vroid-character_2.png",
+          "alt": "未來學院制服"
         },
-        "description": "此作品仍在設計與測試階段，完成後可直接在 works.json 中替換圖片、名稱與介紹。",
+        "description": "清新、未來感明確，學生會長背景設定，個性正直有同理心，充滿清新脫俗的魅力，衣服是學院女子制服，不對稱與設計感適中。。",
         "specs": [
           {
             "label": "DESIGN",
-            "value": "不對稱・俐落"
+            "value": "清新脫俗・未來感"
           },
           {
-            "label": "DETAIL",
-            "value": "偏移扣件・側邊線條"
+            "label": "COLOR",
+            "value": "柔白・冰藍・淺銀灰・深藍灰"
           }
         ]
       },
