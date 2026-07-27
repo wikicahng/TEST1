@@ -71,6 +71,29 @@
             "value": "輕鬆・活力・年輕"
           }
         ]
+      },
+            {
+        "id": "future-stream-studio",
+        "title": "未來學院-學院之聲",
+        "englishTitle": "VOICE OF THE ACADEMY",
+        "category": "FUTURE ACADEMY",
+        "tag": "BACKGROUND / 04",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-bg_4.png",
+          "alt": "學院之聲"
+        },
+        "description": "學院中的媒體室，不論是學院的校務宣導，學生會長的直播，甚至讓學生或歌手來歌唱的媒體直播中心。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "未來・校園・專業"
+          },
+          {
+            "label": "MOOD",
+            "value": "輕鬆・活力・生活感"
+          }
+        ]
       }
     ]
   },
