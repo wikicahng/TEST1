@@ -155,7 +155,7 @@
       {
         "id": "character-development-02",
         "title": "未來學院制服  設計稿",
-        "englishTitle": "UNDER DEVELOPMENT",
+        "englishTitle": "Future Academy Uniform",
         "category": "CHARACTER DEVELOPMENT",
         "tag": "COSTUME / 02",
         "media": {
@@ -163,7 +163,7 @@
           "src": "assets/vroid-character_2.png",
           "alt": "未來學院制服"
         },
-        "description": "清新、未來感明確，學生會長背景設定，個性正直有同理心，充滿清新脫俗的魅力，衣服是學院女子制服，不對稱與設計感適中。。",
+        "description": "清新、未來感明確，學生會長背景設定，銀藍中長半束髮，個性正直有同理心，充滿清新脫俗的魅力，衣服是學院女子制服，不對稱與設計感適中。",
         "specs": [
           {
             "label": "DESIGN",
@@ -177,24 +177,24 @@
       },
       {
         "id": "character-development-03",
-        "title": "開發中",
-        "englishTitle": "UNDER DEVELOPMENT",
+        "title": "未來學院制服  設計稿",
+        "englishTitle": "Future Academy Uniform",
         "category": "CHARACTER DEVELOPMENT",
         "tag": "COSTUME / 03",
         "media": {
           "type": "image",
-          "src": "assets/character-night.svg",
-          "alt": "角色服裝開發中"
+          "src": "assets/vroid-character_3.png",
+          "alt": "未來學院制服"
         },
-        "description": "此作品仍在設計與測試階段，完成後可直接在 works.json 中替換圖片、影片與說明。",
+        "description": "容易親近的學生領袖，灰棕中短髮／低側馬尾，衣服是另一套學院女子制服，不對稱與設計感適中。",
         "specs": [
           {
             "label": "DESIGN",
-            "value": "近未來・夜間版"
+            "value": "知性・俐落・有溫度"
           },
           {
             "label": "COLOR",
-            "value": "深藍・霧紫・銀灰"
+            "value": "象牙白・霧青・藍灰・香檳銀"
           }
         ]
       }
