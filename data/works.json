@@ -74,14 +74,38 @@
       },
             {
         "id": "future-stream-studio",
-        "title": "未來學院-學院之聲",
-        "englishTitle": "VOICE OF THE ACADEMY",
+        "title": "學院之聲-訪談區",
+        "englishTitle": "VOICE OF THE ACADEMY - TALK AREA",
         "category": "FUTURE ACADEMY",
         "tag": "BACKGROUND / 04",
         "media": {
           "type": "image",
           "src": "assets/vroid-bg_4.png",
-          "alt": "學院之聲"
+          "alt": "學院之聲 訪談"
+        },
+        "description": "學院中的媒體室，不論是學院的校務宣導，學生會長的直播，甚至讓學生或歌手來歌唱的媒體直播中心。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "未來・校園・專業"
+          },
+          {
+            "label": "MOOD",
+            "value": "輕鬆・活力・生活感"
+          }
+        ]
+      },
+
+                  {
+        "id": "future-stream-studio",
+        "title": "學院之聲-主舞台區",
+        "englishTitle": "VOICE OF THE ACADEMY - MAIN STAGE",
+        "category": "FUTURE ACADEMY",
+        "tag": "BACKGROUND / 05",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-bg_5.png",
+          "alt": "學院之聲 舞台"
         },
         "description": "學院中的媒體室，不論是學院的校務宣導，學生會長的直播，甚至讓學生或歌手來歌唱的媒體直播中心。",
         "specs": [
