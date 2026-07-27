@@ -197,6 +197,54 @@
             "value": "象牙白・霧青・藍灰・香檳銀"
           }
         ]
+      },
+
+            {
+        "id": "character-development-04",
+        "title": "學生系女網紅  設計稿",
+        "englishTitle": "Student KOL",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 04",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-character_4.png",
+          "alt": "學生系女網紅"
+        },
+        "description": "個性:熱血、正直、正義、外向，懂科技,會對時事批判的類型,有話直說。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "潮・自我・有活力"
+          },
+          {
+            "label": "COLOR",
+            "value": "黑・紫・白・桃"
+          }
+        ]
+      },
+
+                  {
+        "id": "character-development-05",
+        "title": "學生系女網紅  設計稿",
+        "englishTitle": "Student KOL",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 04",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-character_5.png",
+          "alt": "學生系女網紅"
+        },
+        "description": "個性:熱血、正直、正義、外向，懂科技,會對時事批判的類型,有話直說。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "潮・自我・有活力"
+          },
+          {
+            "label": "COLOR",
+            "value": "黑・白・藍"
+          }
+        ]
       }
     ]
   }
