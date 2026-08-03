@@ -187,9 +187,13 @@
         "category": "CHARACTER DEVELOPMENT",
         "tag": "COSTUME / 03",
         "media": {
-          "type": "image",
-          "src": "assets/vroid-character_2.png",
-          "alt": "未來學院制服"
+          "type": "video",
+          "src": "assets/vroid-character_2.mp4",
+          "poster": "assets/character-soft-tech.svg",
+          "alt": "未來學院制服",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
         },
         "description": "清新、未來感明確，學生會長背景設定，銀藍中長半束髮，個性正直有同理心，充滿清新脫俗的魅力，衣服是學院女子制服，不對稱與設計感適中。",
         "specs": [
