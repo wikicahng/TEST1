@@ -154,11 +154,11 @@
       },
       
       {
-        "id": "character-development-03",
+        "id": "character-development-02",
         "title": "未來學院制服 (尚未完成)",
         "englishTitle": "Future Academy Uniform",
         "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 03",
+        "tag": "COSTUME / 02",
         "media": {
           "type": "video",
           "src": "assets/vroid-character_2.mp4",
@@ -181,11 +181,11 @@
         ]
       },
       {
-        "id": "character-development-04",
+        "id": "character-development-03",
         "title": "未來學院制服  設計稿",
         "englishTitle": "Future Academy Uniform",
         "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 04",
+        "tag": "COSTUME / 03",
         "media": {
           "type": "image",
           "src": "assets/vroid-character_3.png",
@@ -205,11 +205,11 @@
       },
 
             {
-        "id": "character-development-05",
+        "id": "character-development-04",
         "title": "學生系女網紅  設計稿",
         "englishTitle": "Student KOL",
         "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 05",
+        "tag": "COSTUME / 04",
         "media": {
           "type": "image",
           "src": "assets/vroid-character_4.png",
@@ -229,11 +229,11 @@
       },
 
                   {
-        "id": "character-development-06",
+        "id": "character-development-05",
         "title": "學生系女網紅  設計稿",
         "englishTitle": "Student KOL",
         "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 06",
+        "tag": "COSTUME / 05",
         "media": {
           "type": "image",
           "src": "assets/vroid-character_5.png",
@@ -252,11 +252,11 @@
         ]
       },
       {
-        "id": "character-development-02",
+        "id": "character-development-06",
         "title": "古典魔法學校服",
         "englishTitle": "Magic School Classical",
         "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 02",
+        "tag": "COSTUME / 06",
         "media": {
           "type": "video",
           "src": "assets/vroid-character_0.mp4",
