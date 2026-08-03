@@ -152,33 +152,6 @@
           }
         ]
       },
-{
-        "id": "character-development-02",
-        "title": "古典魔法學校服",
-        "englishTitle": "Magic School Classical",
-        "category": "CHARACTER DEVELOPMENT",
-        "tag": "COSTUME / 02",
-        "media": {
-          "type": "video",
-          "src": "assets/vroid-character_0.mp4",
-          "poster": "assets/character-soft-tech.svg",
-          "alt": "古典魔法學校服",
-          "autoplay": true,
-          "loop": true,
-          "muted": true
-        },
-        "description": "以中世紀古典・魔法世界為設計，是位喜歡異世界所見所聞的魔法圖書館的研究員。",
-        "specs": [
-          {
-            "label": "DESIGN",
-            "value": "古典・魔法"
-          },
-          {
-            "label": "COLOR",
-            "value": "淡藍・皮革色・金色・黑灰色"
-          }
-        ]
-      },
       
       {
         "id": "character-development-03",
@@ -275,6 +248,33 @@
           {
             "label": "COLOR",
             "value": "黑・白・藍"
+          }
+        ]
+      },
+      {
+        "id": "character-development-02",
+        "title": "古典魔法學校服",
+        "englishTitle": "Magic School Classical",
+        "category": "CHARACTER DEVELOPMENT",
+        "tag": "COSTUME / 02",
+        "media": {
+          "type": "video",
+          "src": "assets/vroid-character_0.mp4",
+          "poster": "assets/character-soft-tech.svg",
+          "alt": "古典魔法學校服",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        },
+        "description": "以中世紀古典・魔法世界為設計，是位喜歡異世界所見所聞的魔法圖書館的研究員。",
+        "specs": [
+          {
+            "label": "DESIGN",
+            "value": "古典・魔法"
+          },
+          {
+            "label": "COLOR",
+            "value": "淡藍・皮革色・金色・黑灰色"
           }
         ]
       }
