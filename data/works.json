@@ -277,7 +277,25 @@
             "value": "淡藍・皮革色・金色・黑灰色"
           }
         ]
-      }
+      };
+
+    "face": {
+    "label": "VROID臉部設計",
+    "ariaLabel": "眼睛與牙齒",
+    "works": [
+      {
+        "id": "EYE-01",
+        "title": "眼睛版本1",
+        "englishTitle": "EYE-1",
+        "category": "EYE",
+        "tag": "EYE / 01",
+        "media": {
+          "type": "image",
+          "src": "assets/face_01.png",
+        },
+
+      },
+      {
     ]
   }
 }
