@@ -280,4 +280,34 @@
       }
     ]
   }
+  "face": {
+    "label": "VROID背景設計",
+    "ariaLabel": "VROID背景設計作品",
+    "works": [
+        {
+        "id": "future-stream-studio",
+        "title": "學院之聲-主舞台區",
+        "englishTitle": "VOICE OF THE ACADEMY - MAIN STAGE",
+        "category": "FUTURE ACADEMY",
+        "tag": "BACKGROUND / 05",
+        "media": {
+          "type": "image",
+          "src": "assets/vroid-bg_5.png",
+          "alt": "學院之聲 舞台"
+        },
+        "description": "學院中的媒體室，不論是學院的校務宣導，學生會長的直播，甚至讓學生或歌手來歌唱的媒體直播中心。",
+        "specs": [
+          {
+            "label": "STYLE",
+            "value": "未來・校園・專業"
+          },
+          {
+            "label": "MOOD",
+            "value": "輕鬆・活力・生活感"
+          }
+        ]
+      }
+    ]
+  }
+  
 }
