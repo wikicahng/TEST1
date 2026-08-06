@@ -280,35 +280,4 @@
       }
     ]
   }
-  "face": {
-    "label": "VROID背景設計",
-    "ariaLabel": "VROID背景設計作品",
-    "works": [
-      {
-        "id": "grand-arcane-library",
-        "title": "皇家大魔法圖書館",
-        "englishTitle": "GRAND ARCANE LIBRARY",
-        "category": "FEATURED ENVIRONMENT",
-        "tag": "BACKGROUND / 01",
-        "media": {
-          "type": "image",
-          "src": "assets/vroid-bg_1.png",
-          "alt": "皇家大魔法圖書館"
-        },
-        "description": "融合挑高穹頂、彩繪玻璃、金色裝飾與漂浮魔法元素，營造知性、溫暖且具有世界觀層次的主播空間。",
-        "specs": [
-          {
-            "label": "STYLE",
-            "value": "奇幻・魔法學院"
-          },
-          {
-            "label": "MOOD",
-            "value": "知性・溫暖・優雅"
-          }
-        ]
-      },
-     
-    ]
-  }
-  
 }
