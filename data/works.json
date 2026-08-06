@@ -282,8 +282,8 @@
   },
 
 "face": {
-    "label": "VROID背景設計",
-    "ariaLabel": "VROID背景設計作品",
+    "label": "VROID臉部設計",
+    "ariaLabel": "VROID臉部設計作品",
     "works": [
       {
         "id": "face-01",
