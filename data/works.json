@@ -279,5 +279,25 @@
         ]
       }
     ]
-  }
+  },
+   "face": {
+    "label": "VROID臉部設計",
+    "ariaLabel": "VROID臉部設計作品",
+    "works": [
+      {
+        "id": "EYE-01",
+        "title": "眼睛-01",
+        "englishTitle": "EYE-01",
+        "category": "FACE",
+        "tag": "FACE / 01",
+        "media": {
+          "type": "image",
+          "src": "assets/face_01.png",
+          
+        },
+
+        ]
+      }
+   }
+    
 }
