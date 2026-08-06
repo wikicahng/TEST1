@@ -293,8 +293,7 @@
         "media": {
           "type": "image",
           "src": "assets/face_01.png",
-          
-        },
+          }
 
         ]
       }
