@@ -276,9 +276,37 @@
       }
     ]
   },
-  "face": {
+  
+ "face": {
     "label": "臉部細節",
     "ariaLabel": "VROID臉部細節作品",
-    "works": []
+    "works": [
+      {
+        "id": "face-detail-01",
+        "title": "眼睛細節 01",
+        "englishTitle": "FACE DETAIL 01",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 01",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_01.png",
+          "alt": "VROID臉部細節"
+        },
+
+        "description": "角色臉部細節設計展示。",
+
+        "specs": [
+          {
+            "label": "TYPE",
+            "value": "Face Detail"
+          },
+          {
+            "label": "STYLE",
+            "value": "角色設計"
+          }
+        ]
+      }
+    ]
   }
 }
