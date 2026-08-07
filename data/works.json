@@ -293,9 +293,161 @@
           "src": "assets/face_01.png",
           "alt": "VROID臉部細節"
         }
+      },
 
+     {
+        "id": "face-detail-02",
+        "title": "眼睛細節 02",
+        "englishTitle": "FACE DETAIL 02",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 02",
 
-      }
+        "media": {
+          "type": "image",
+          "src": "assets/face_02.png",
+          "alt": "VROID臉部細節"
+        }
+      },
+
+     {
+        "id": "face-detail-03",
+        "title": "眼睛細節 03",
+        "englishTitle": "FACE DETAIL 03",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 03",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_03.png",
+          "alt": "VROID臉部細節"
+        }
+      },    
+
+    {
+        "id": "face-detail-04",
+        "title": "眼睛細節 04",
+        "englishTitle": "FACE DETAIL 04",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 04",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_04.png",
+          "alt": "VROID臉部細節"
+        }
+      },
+
+    {
+        "id": "face-detail-05",
+        "title": "眼睛細節 05",
+        "englishTitle": "FACE DETAIL 05",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 05",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_05.png",
+          "alt": "VROID臉部細節"
+        }
+      },  
+
+    {
+        "id": "face-detail-06",
+        "title": "眼睛細節 06",
+        "englishTitle": "FACE DETAIL 06",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 06",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_06.png",
+          "alt": "VROID臉部細節"
+        }
+      },  
+
+     {
+        "id": "face-detail-07",
+        "title": "眼睛細節 07",
+        "englishTitle": "FACE DETAIL 07",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 07",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_07.png",
+          "alt": "VROID臉部細節"
+        }
+      }, 
+
+      {
+        "id": "face-detail-08",
+        "title": "眼睛細節 08",
+        "englishTitle": "FACE DETAIL 08",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 08",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_08.png",
+          "alt": "VROID臉部細節"
+        }
+      }, 
+
+      {
+        "id": "face-detail-09",
+        "title": "眼睛細節 09",
+        "englishTitle": "FACE DETAIL 09",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 09",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_09.png",
+          "alt": "VROID臉部細節"
+        }
+      }, 
+
+       {
+        "id": "face-detail-10",
+        "title": 牙齒細節 01",
+        "englishTitle": "FACE DETAIL 10",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 10",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_10.png",
+          "alt": "VROID臉部細節"
+        }
+      }, 
+
+        {
+        "id": "face-detail-11",
+        "title": 牙齒細節 02",
+        "englishTitle": "FACE DETAIL 11",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 11",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_11.png",
+          "alt": "VROID臉部細節"
+        }
+      }, 
+
+        {
+        "id": "face-detail-12",
+        "title": 牙齒細節 03",
+        "englishTitle": "FACE DETAIL 12",
+        "category": "FACE DESIGN",
+        "tag": "FACE / 12",
+
+        "media": {
+          "type": "image",
+          "src": "assets/face_12.png",
+          "alt": "VROID臉部細節"
+        }
+      } 
     ]
   }
 }
