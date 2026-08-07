@@ -6,9 +6,43 @@
   <meta name="theme-color" content="#070a12">
   <meta name="description" content="VROID 虛擬角色、服裝與背景設計作品集">
   <title>VROID DESIGN ARCHIVE</title>
-  <link rel="stylesheet" href="css/style.css?v=2.0.0">
+  <link rel="stylesheet" href="css/style.css?v=2.2.0">
 </head>
-<body>
+<body class="site-loading">
+
+  <!-- V2.2 啟動畫面 / 素材預載進度 -->
+  <div class="site-loader" id="siteLoader" role="status" aria-live="polite" aria-busy="true">
+    <div class="site-loader-grid" aria-hidden="true"></div>
+
+    <div class="site-loader-panel">
+      <div class="site-loader-brand">
+        <span class="site-loader-mark" aria-hidden="true"></span>
+        <div>
+          <p class="site-loader-kicker">VROID DESIGN ARCHIVE</p>
+          <h2 class="site-loader-title">INITIALIZING ASSET DATABASE</h2>
+        </div>
+      </div>
+
+      <div class="site-loader-progress" aria-hidden="true">
+        <div class="site-loader-progress-bar" data-loader-bar></div>
+      </div>
+
+      <div class="site-loader-status-row">
+        <span data-loader-status>Loading archive manifest...</span>
+        <strong data-loader-percent>0%</strong>
+      </div>
+
+      <div class="site-loader-meta">
+        <span data-loader-count>0 / 0</span>
+        <span data-loader-detail>Preparing media index</span>
+      </div>
+
+      <button class="site-loader-skip" type="button" data-loader-skip hidden>
+        SKIP WAIT
+      </button>
+    </div>
+  </div>
+
   <div class="app-shell">
     <header class="top-panel">
       <a class="brand" href="#home" aria-label="回首頁">
@@ -84,6 +118,6 @@
   </div>
 
   <noscript>此網站需要啟用 JavaScript 才能顯示作品。</noscript>
-  <script type="module" src="js/main.js?v=2.0.0"></script>
+  <script type="module" src="js/main.js?v=2.2.0"></script>
 </body>
 </html>

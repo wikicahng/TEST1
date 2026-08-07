@@ -45,34 +45,62 @@ export function initLightbox() {
     updateTransform();
   }
 
+  function setBuffering(active) {
+    mediaWrap.classList.toggle("is-buffering", active);
+  }
+
   function createExpandedMedia(source) {
     if (source.tagName === "VIDEO") {
       const video = document.createElement("video");
       video.src = source.currentSrc || source.querySelector("source")?.src || source.src;
       video.controls = true;
       video.autoplay = true;
+      video.preload = "auto";
       video.loop = source.loop;
       video.muted = source.muted;
       video.playsInline = true;
       if (source.poster) video.poster = source.poster;
+
+      video.addEventListener("loadstart", () => setBuffering(true));
+      video.addEventListener("waiting", () => setBuffering(true));
+      video.addEventListener("stalled", () => setBuffering(true));
+      video.addEventListener("canplay", () => setBuffering(false));
+      video.addEventListener("playing", () => setBuffering(false));
+      video.addEventListener("error", () => setBuffering(false));
+
       return video;
     }
 
     const image = document.createElement("img");
     image.src = source.currentSrc || source.src;
     image.alt = source.alt || "全螢幕作品圖片";
+    image.decoding = "async";
     image.draggable = false;
+
+    setBuffering(true);
+    image.addEventListener("load", () => setBuffering(false), { once: true });
+    image.addEventListener("error", () => setBuffering(false), { once: true });
+
+    if (image.complete) {
+      setBuffering(false);
+    }
+
     return image;
   }
 
   function open(source) {
     lastTrigger = source;
-    mediaWrap.replaceChildren(createExpandedMedia(source));
+    const expanded = createExpandedMedia(source);
+    mediaWrap.replaceChildren(expanded);
     resetTransform();
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
     close?.focus();
+
+    if (expanded.tagName === "VIDEO") {
+      expanded.play().catch(() => {});
+    }
   }
 
   function closeLightbox() {
@@ -81,6 +109,7 @@ export function initLightbox() {
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
+    mediaWrap.classList.remove("is-buffering");
     mediaWrap.replaceChildren();
     resetTransform();
     lastTrigger?.focus();
