@@ -279,27 +279,5 @@
         ]
       }
     ]
-  },
-
-"face": {
-    "label": "眼睛與牙齒",
-    "ariaLabel": "VROID臉部設計作品",
-    "works": [
-      {
-        "id": "face-01",
-        "title": "眼睛-01",
-        "englishTitle": "EYE-01",
-        "category": "FACE",
-        "tag": "FACE / 01",
-        "media": {
-          "type": "image",
-          "src": "assets/face_01.png",
-          "alt": "眼睛-01"
-        },
-
-      
-      }
-    ]
   }
-  
 }
