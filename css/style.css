@@ -104,7 +104,7 @@ button { color: inherit; }
 
 .main-nav {
   display: grid;
-  grid-template-columns: .75fr 1.15fr 1.45fr;
+  grid-template-columns: .72fr 1.08fr 1.38fr .82fr;
 }
 
 .nav-button {
@@ -547,7 +547,11 @@ body.lightbox-open { overflow: hidden; }
   .brand-mark { width: 25px; }
 
   .main-nav {
-    grid-template-columns: .7fr 1.2fr 1.55fr;
+    grid-template-columns:
+      minmax(78px, .7fr)
+      minmax(122px, 1.2fr)
+      minmax(158px, 1.55fr)
+      minmax(88px, .9fr);
     overflow-x: auto;
   }
 
@@ -671,5 +675,19 @@ body.lightbox-open { overflow: hidden; }
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
     animation-duration: .01ms !important;
+  }
+}
+
+
+/* V2.1 - fourth navigation item */
+@media (max-width: 560px) {
+  .main-nav {
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav .nav-button {
+    min-width: 0;
   }
 }
