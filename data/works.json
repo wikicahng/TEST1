@@ -72,7 +72,7 @@
           }
         ]
       },
-            {
+      {
         "id": "future-stream-studio",
         "title": "學院之聲-訪談區",
         "englishTitle": "VOICE OF THE ACADEMY - TALK AREA",
@@ -95,8 +95,7 @@
           }
         ]
       },
-
-                  {
+      {
         "id": "future-stream-studio",
         "title": "學院之聲-主舞台區",
         "englishTitle": "VOICE OF THE ACADEMY - MAIN STAGE",
@@ -152,7 +151,6 @@
           }
         ]
       },
-      
       {
         "id": "character-development-02",
         "title": "未來學院制服",
@@ -203,8 +201,7 @@
           }
         ]
       },
-
-            {
+      {
         "id": "character-development-04",
         "title": "學生系女網紅  設計稿",
         "englishTitle": "Student KOL",
@@ -227,8 +224,7 @@
           }
         ]
       },
-
-                  {
+      {
         "id": "character-development-05",
         "title": "學生系女網紅  設計稿",
         "englishTitle": "Student KOL",
@@ -279,5 +275,10 @@
         ]
       }
     ]
+  },
+  "face": {
+    "label": "臉部細節",
+    "ariaLabel": "VROID臉部細節作品",
+    "works": []
   }
 }
